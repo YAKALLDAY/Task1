@@ -1,0 +1,4 @@
+C:\Users\kgevo\source\repos\TIKO task\TIKO task\obj\Debug\net6.0\TIKO task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kgevo\source\repos\TIKO task\TIKO task\obj\Debug\net6.0\TIKO task.AssemblyInfoInputs.cache
+C:\Users\kgevo\source\repos\TIKO task\TIKO task\obj\Debug\net6.0\TIKO task.AssemblyInfo.cs
+C:\Users\kgevo\source\repos\TIKO task\TIKO task\obj\Debug\net6.0\TIKO task.csproj.CoreCompileInputs.cache
