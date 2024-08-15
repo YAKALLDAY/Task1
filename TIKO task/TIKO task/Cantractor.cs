@@ -4,28 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using TIKO_task.BaseClass;
+using TIKO_task.Interfaces;
 
 namespace TIKO_task
 {
-    public class Cantractor:Abclass, CommonEMpCon
+    public class Cantractor:BaseAbstractClass, ICommonEMpCon
     {
         private string Manager { get; set; }
         private string Contract { get; set; }
 
-        public override string GetFullName()
+        public virtual string GetFullName()
         {
-            string nickname = Convert.ToString(gender);    // tikoooooooooooooooooo
-            return nickname + "  " + name + "  " + surname;
+            string nickname = Convert.ToString(Gender);    // tikoooooooooooooooooo
+            return nickname + "  " + Name + "  " + Surname;
 
         }
-        public string GetManagerFullname (string Managername)
+        public string GetManagerFullname (string ManagerName)
     {
-        return Managername;
+        return ManagerName;
     }
-        public string GetContractInfo(int summary)
+        public string GetContractInfo(int Summary)
         {
-        string sum = Convert.ToString(summary);
-            return sum;
+        string Sum = Convert.ToString(Summary);
+            return Sum;
 
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kgevo\\source\\repos\\TIKO task\\TIKO task\\TIKO task.csproj": {}
+    "C:\\Karen\\repos\\Task1\\TIKO task\\TIKO task\\TIKO task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kgevo\\source\\repos\\TIKO task\\TIKO task\\TIKO task.csproj": {
+    "C:\\Karen\\repos\\Task1\\TIKO task\\TIKO task\\TIKO task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kgevo\\source\\repos\\TIKO task\\TIKO task\\TIKO task.csproj",
+        "projectUniqueName": "C:\\Karen\\repos\\Task1\\TIKO task\\TIKO task\\TIKO task.csproj",
         "projectName": "TIKO task",
-        "projectPath": "C:\\Users\\kgevo\\source\\repos\\TIKO task\\TIKO task\\TIKO task.csproj",
+        "projectPath": "C:\\Karen\\repos\\Task1\\TIKO task\\TIKO task\\TIKO task.csproj",
         "packagesPath": "C:\\Users\\kgevo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kgevo\\source\\repos\\TIKO task\\TIKO task\\obj\\",
+        "outputPath": "C:\\Karen\\repos\\Task1\\TIKO task\\TIKO task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kgevo\\AppData\\Roaming\\NuGet\\NuGet.Config",

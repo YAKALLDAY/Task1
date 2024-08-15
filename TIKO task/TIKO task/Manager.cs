@@ -4,29 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using TIKO_task.BaseClass;
+using TIKO_task.Interfaces;
 
 namespace TIKO_task
 {
-    public class Manager:Abclass,CommonEMPman
+    public class Manager:BaseAbstractClass,ICommonEmpMan
     {
+        //Manager() : base() { }
         private int YearlySalary { get; set; }
         private int YearStarted { get; set; }
         private string EmpoleeList { get; set; }
         public virtual string GetFullName()
         {
-            string nickname = Convert.ToString(surname);
-            return nickname + "  " + name + "  " + surname;
+            string NickName = Gender.ToString();
+            return NickName + "  " + Name + "  " + Surname;
 
         }
         public int GetAmountPaid(int CurrentYear)
         {
-            int paid = (CurrentYear - YearStarted - 1) * YearStarted;
-            return paid;
+            int Paid = (CurrentYear - YearStarted - 1) * YearStarted;
+            return Paid;
         }
         public  int GetMaxVacationAmount(int CurrentYear)
         {
-            int amount = (CurrentYear - YearStarted - 1) * 28;
-            return amount;
+            int Amount = (CurrentYear - YearStarted - 1) * 28;
+            return Amount;
 
 
         }
