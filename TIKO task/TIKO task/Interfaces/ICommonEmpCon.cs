@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace TIKO_task
 {
-    internal interface ICommonEMpCon
+    internal interface ICommonEmployeeContractor
     {
-        string GetManagerFullName(string ManagerName);
+        string GetManagerFullName();
     }
 }

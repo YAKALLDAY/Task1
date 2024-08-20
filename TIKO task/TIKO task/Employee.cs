@@ -8,34 +8,28 @@ using TIKO_task.Interfaces;
 
 namespace TIKO_task
 {
-    public class Employee : BaseAbstractClass,ICommonEmpMan
+    public class Employee : AbstractPerson,ICommonEmployeeManager
     {
        
-        private int YearlySalary { get; set; }
-        private int YearStarted { get; set; }
-        private int Manager;
+        private int EmployeeYearlySalary { get; set; }
+        private int EmployeeYearStarted { get; set; }
+        private Manager Manager { get; set; }
+        
+        // GetFullName();
 
-        public virtual string GetFullName()
+        public int GetAmountPaid(int EmployeeCurrentYear)
         {
-            string NickName = Convert.ToString(Gender);
-            return NickName + "  " + Name + "  " + Surname;
-
+            return (EmployeeCurrentYear - EmployeeYearStarted - 1) * EmployeeYearStarted;
         }
-        public int GetAmountPaid(int CurrentYear)
+        public int GetMaxVacationAmount(int EmployeeCurrentYear)
         {
-            int Paid = (CurrentYear - YearStarted - 1) * YearStarted;
-            return Paid;
-        }
-        public int GetMaxVacationAmount(int CurrentYear)
-        {
-            int Amount = (CurrentYear - YearStarted - 1) * 28;
-            return Amount;
+            return (EmployeeCurrentYear - EmployeeYearStarted - 1) * 28;
 
 
         }
-        public string GetManagerFullName(string ManagerName)
+        public string GetManagerFullName()
         {
-            return ManagerName;
+            return Manager.GetFullName();   //look here (composition)
         }
     }
 }

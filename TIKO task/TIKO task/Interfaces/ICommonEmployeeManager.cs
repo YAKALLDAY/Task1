@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TIKO_task
 {
-    internal interface ICommonEmpMan
+    internal interface ICommonEmployeeManager
     {
         int GetAmountPaid(int CurrentYear);
         int GetMaxVacationAmount(int CurrentYear);

@@ -9,33 +9,29 @@ using TIKO_task.Interfaces;
 
 namespace TIKO_task
 {
-    public class Manager:BaseAbstractClass,ICommonEmpMan
+    public class Manager:AbstractPerson,ICommonEmployeeManager
     {
         //Manager() : base() { }
-        private int YearlySalary { get; set; }
-        private int YearStarted { get; set; }
-        private string EmpoleeList { get; set; }
-        public virtual string GetFullName()
+        private int ManagerYearlySalary { get; set; }
+        private int ManagerYearStarted { get; set; }
+        private Employee EmpoleeList { get; set; }
+        
+        //public string GetFullName()
+       
+        public int GetAmountPaid(int ManagerCurrentYear)
         {
-            string NickName = Gender.ToString();
-            return NickName + "  " + Name + "  " + Surname;
-
+            return (ManagerCurrentYear - ManagerYearStarted - 1) * ManagerYearStarted;
         }
-        public int GetAmountPaid(int CurrentYear)
+        public  int GetMaxVacationAmount(int ManagerCurrentYear)
         {
-            int Paid = (CurrentYear - YearStarted - 1) * YearStarted;
-            return Paid;
-        }
-        public  int GetMaxVacationAmount(int CurrentYear)
-        {
-            int Amount = (CurrentYear - YearStarted - 1) * 28;
-            return Amount;
+            return (ManagerCurrentYear - ManagerYearStarted - 1) * 28;
 
 
         }
-        public int GetEmployeeCount()
-        {
+        public List<Employee> GetEmployeeCount = new List<Employee>(); //stex el nayi
 
-        }
+        
+
+        
 }
 }
